@@ -17,7 +17,7 @@ In clinical cardiology, assessing heart failure risk relies on evaluating a comp
 1. **Exploratory Data Analysis (Clinical Triage):** Conducted a preliminary review of the dataset to verify patient volume, check for missing values, and analyze the statistical spread of the vitals.
 2. **Data Standardization:** Machine learning models require balanced numerical inputs. Applied `StandardScaler` to ensure vitals with naturally larger numerical ranges (like platelet count) did not artificially overpower smaller-scale vitals (like serum creatinine).
 3. **Algorithm Initialization:** Deployed two distinct models to compare diagnostic approaches:
-   * **Logistic Regression (The Clinical Risk Score):** Assigns mathematical weights to specific vitals, functioning similarly to a standard clinical risk scoring system (e.g., CHADS₂).
+   * **Logistic Regression (The Clinical Risk Score):** Assigns mathematical weights to specific vitals, functioning similarly to a standard clinical risk scoring system (e.g., CHADS₂ score for stroke risk).
    * **Random Forest Classifier (The Multidisciplinary Team):** An ensemble model utilizing 100 decision trees to evaluate complex, overlapping patient features and generate a consensus diagnosis.
 4. **Evaluation:** Tested both models on a 20% unseen patient subset, evaluating not just raw accuracy, but specific clinical metrics including Precision (minimizing false positives) and Recall/Sensitivity (minimizing false negatives).
 
